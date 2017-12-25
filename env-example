@@ -2,6 +2,11 @@
 # General Setup
 ###########################################################
 
+### Compose Project Name
+# TODO: underscores and hyphens
+# ref) https://github.com/docker/compose/issues/4002
+COMPOSE_PROJECT_NAME=laradock_kgx
+
 ### Application Path ###################################################################################################
 # Point to your code, will be available at `/var/www`.
 
@@ -20,7 +25,7 @@ PHP_INTERPRETER=php-fpm
 ### Data Path ##########################################################################################################
 # Choose storage path on your machine. For all storage systems.
 
-DATA_SAVE_PATH=~/.laradock/data
+DATA_SAVE_PATH=./data
 
 ### Docker compose files ###############################################################################################
 # Select which docker-compose files to include.
