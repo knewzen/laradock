@@ -54,8 +54,16 @@ services:
         - applications
       extra_hosts:
         - "dockerhost:${DOCKER_HOST_IP}"
+      # hot (HMR) のために
+      # -i しないと .bashrc を読み込まず、npm がみつからないエラーになる
+      # FIXME: この起動方法だと、docker-compose logs がこれに支配されている気がする
+      command: bash -c -i "npm run hot -- --host 0.0.0.0 --watch-poll"
       ports:
         - "${WORKSPACE_SSH_PORT}:22"
+        # for hot (HMR)
+        - "8080:8080"
+        # FIXME: for dusk ???
+        - "9222:9222"
       tty: true
       networks:
         - frontend
