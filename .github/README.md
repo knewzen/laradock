@@ -35,8 +35,6 @@ Support this project by becoming a sponsor.
 
 Your logo will show up on the [github repository](https://github.com/laradock/laradock/) index page and the [documentation](http://laradock.io/) main page, with a link to your website. [[Become a sponsor](https://opencollective.com/laradock#sponsor)]
 
-
-
 or show your support via [Beerpay](https://beerpay.io/laradock/laradock) 
 
 [![Beerpay](https://beerpay.io/laradock/laradock/badge.svg?style=flat)](https://beerpay.io/laradock/laradock)
